@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“Automated Fish Pond Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="background-image:url(&quot;assets/img/6283465_3166609.jpg&quot;);background-size:cover;background-repeat:no-repeat;">
+    <section id="mainpage" style="width:100%;height:900vh;">
+        <nav class="navbar navbar-light navbar-expand-md" data-aos="fade-up" data-aos-duration="700" id="navbarmainmenu">
+            <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse flex-grow-1 justify-content-end"
+                    id="navcol-1" style="background-color:#99e9d0;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Switch to Website Blueprint</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 data-aos="fade-up" data-aos-duration="750" data-aos-once="true" id="headingmain"><br>Automated Fish Pond Management System<br><br></h1>
+        <h1 data-aos="fade-up" data-aos-delay="900" id="headingpondmonitoring" style="margin-left:11px;color:rgb(255,255,255);"><br>Pond Monitoring and Control<br><br></h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="950" id="cardmonitoringcard" style="width:97%;margin-left:5px;">
+                    <div class="card-body"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" id="carddashboard">
+                                <div class="card-body">
+                                    <h1 style="font-size:35px;"><br>Temp<br><br></h1>
+                                    <p style="font-size:26px;"><br>22°C <br><br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" id="card2dashboard" style="margin-right:22px;background-color:rgb(0,0,0);">
+                                <div class="card-body">
+                                    <h1><br>pH<br><br></h1>
+                                    <p style="font-size:26px;">7.5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" id="card3dashboard" style="width:80%;margin-left:33px;background-color:rgb(245,170,170);margin-top:20px;">
+                                <div class="card-body" style="margin-left:0px;">
+                                    <h1><br>Ammonia<br><br></h1>
+                                    <p style="font-size:25px;">0.2 ppm<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" id="card4dashboard" style="margin-left:51px;width:70%;background-color:rgb(234,42,42);margin-top:11px;margin-bottom:43px;">
+                                <div class="card-body">
+                                    <h1><br>Nitrate<br><br></h1>
+                                    <p style="font-size:26px;">0.5 ppm<br></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" id="card5dashbaord" style="margin-right:9px;width:87%;margin-left:7px;background-color:rgb(183,175,175);margin-top:17px;">
+                                <div class="card-body">
+                                    <h1><br>O2<br><br></h1>
+                                    <p style="font-size:27px;">8 mg/L<br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="1000" id="headingdatagraphs">Real Time Data Graphs</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="1100" id="cardgraphdata">
+                    <div class="card-body"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 style="margin-left:11px;">Temp:<br><br> 22°C<br><br></h5>
+                            <div class="progress beautiful progress-lg" style="width:80%;margin-left:11px;">
+                                <div class="progress-bar bg-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 style="margin-left:11px;">pH:<br>7.5 <br></h5>
+                            <div class="progress beautiful progress-lg" style="width:80%;margin-left:11px;">
+                                <div class="progress-bar bg-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 style="margin-left:11px;">Ammonia<br>0.2 ppm<br></h5>
+                            <div class="progress beautiful progress-lg" style="width:80%;margin-left:11px;">
+                                <div class="progress-bar bg-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="height:144px;">
+                            <h5 style="margin-left:11px;"><br>Nitrate:<br> 0.5 ppm<br><br></h5>
+                            <div class="progress beautiful progress-lg" style="margin-left:11px;width:80%;">
+                                <div class="progress-bar bg-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="height:108px;">
+                            <h5 style="margin-left:11px;">O2:<br>8 mg/L</h5>
+                            <div class="progress beautiful progress-lg" style="width:80%;margin-left:11px;">
+                                <div class="progress-bar bg-danger" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="1100" id="headingtablelive">Live Data Table<br></h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="1100" id="carddatatable" style="width:97%;margin-left:12px;font-size:11px;">
+                    <div class="card-body"><table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>pH</th>
+                <th>Amonia</th>
+                <th>Nitrate</th>
+                <th>O2</th>
+                <th>Temp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12:00 PM</td>
+                <td>7.5</td>
+                <td>0.2 ppm</td>
+                <td>0.5 ppm</td>
+                <td>8 mg/L</td>
+                <td>22°C</td>
+            </tr>
+            <tr>
+                <td>12:01 PM</td>
+                <td>7.5</td>
+                <td>0.2 ppm</td>
+                <td>0.5 ppm</td>
+                <td>8 mg/L</td>
+                <td>22°C</td>
+            </tr>
+            <tr>
+                <td>12:02 PM</td>
+                <td>7.5</td>
+                <td>0.3 ppm</td>
+                <td>0.5 ppm</td>
+                <td>7 mg/L</td>
+                <td>21°C</td>
+            </tr>
+        </tbody>
+    </table></div>
+                </div>
+            </div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="1100" id="controlpanelheading" style="margin-left:11px;color:rgb(255,255,255);">Control Panel</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="1100" id="cardcontrolpanel" style="width:92%;margin-left:11px;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col"><button class="btn btn-primary" type="button" id="buttonfeedfish" style="color:rgb(8,8,8);background-color:#5f5353;margin-bottom:8px;">Feed Fish</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button class="btn btn-primary" type="button" id="buttonactivatesprayer" style="background-color:#191414;margin-bottom:9px;color:#e3e3e3;">Activate Sprayer</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button class="btn btn-primary" type="button" id="buttontriggeralarm" style="background-color:#ed8d00;margin-bottom:8px;color:#000000;">Trigger Alarm</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button class="btn btn-primary" type="button" id="buttontogglelights" style="background-color:#5cb85c;margin-bottom:8px;color:#000000;">Toggle Lights</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="1100" id="headingalerts" style="color:#ffffff;margin-left:11px;">Alerts</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="1100" id="cardalerts" style="width:89%;margin-left:22px;">
+                    <div class="card-body">
+                        <p class="card-text"><br>! High Ammonia Level Detected! <br><br></p>
+                        <p class="card-text"><br>! Low Dissolved Oxygen! <br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="1100" id="headingsystemstatus">System Status</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="1100" id="cardsystemstatus">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family:Aldrich, sans-serif;">Sensors:</h4>
+                        <p class="card-text">Healthy</p>
+                        <h4 class="card-title" style="font-family:Aldrich, sans-serif;">Feeders:</h4>
+                        <p class="card-text">Healthy</p>
+                        <h4 class="card-title" style="font-family:Aldrich, sans-serif;">Alarms:</h4>
+                        <p class="card-text">Healthy</p>
+                        <h4 class="card-title" style="font-family:Aldrich, sans-serif;">Wi-fi:</h4>
+                        <p class="card-text">Connected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 data-aos="fade-up" data-aos-delay="1100" id="headingusersettings">User Settings</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-aos="fade-up" data-aos-delay="1100" id="cardusersettings" style="width:92%;margin-left:11px;">
+                    <div class="card-body">
+                        <p class="card-text"><br>pH Threshold: [ 7.0 ]&nbsp;<br>Ammonia Threshold: [ 0.5 ppm ]&nbsp;<br>Nitrate Threshold: [ 1.0 ppm ]&nbsp;<br>Oxygen Threshold: [ 6 mg/L ]<br><br></p><button class="btn btn-primary" type="button" id="buttonsavesettings" style="color:rgb(0,0,0);background-color:#4a3f3f;">Save Settings</button>
+                        <button
+                            class="btn btn-primary" type="button" id="buttoneditsettings" style="background-color:#aeaeae;color:rgb(255,255,255);">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
